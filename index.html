@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Weather Dashboard</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css"/>
+  <link
+  href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+  rel="stylesheet"
+/>
+</head>
+<body>
+
+  <div id="app">
+    <div class="header">
+      <i class="ti ti-cloud-storm header-icon"></i>
+      <span class="header-title">Weather Dashboard</span>
+    </div>
+
+    <div class="search-row">
+      <input type="text" id="cityInput" placeholder="Enter any city name…" autocomplete="off"/>
+      <button id="searchBtn" onclick="getWeather()">
+        <i class="ti ti-cloud-search"></i> Get weather
+      </button>
+    </div>
+
+    <div id="status"></div>
+    <div class="err" id="errBox"></div>
+    <div id="result"></div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
